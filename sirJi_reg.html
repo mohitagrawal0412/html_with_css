@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="sirJi.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+      
+    
+      .mid_body{
+          height:550px;
+         /* background-color: red; */
+          width:80%;
+          margin: auto;
+          margin-top: 5vh;
+          /* background-image: linear-gradient(#2bc0e4 , #eaecc6); */
+      }
+      .image_body{
+          float: left;
+          height:400px;
+          padding-top: 10vh;
+          /* margin-left: 20px; */
+          /* background-color:sandybrown; */
+          width:70%;
+      }
+      .form{
+         float: right;
+          height:400px;
+          padding-top: 12vh;          
+          width:30%;
+          /* background-color: rgb(13, 240, 108); */
+      }
+      .input_box{
+          width: 96%;
+          height: 30px;
+          margin-top: 15px;
+          border-radius: 6px;
+          border: 1px solid lightgrey;
+         
+      }
+     
+      .button{
+          width:60%;
+          background-color:black ;
+          height:36px;
+          margin-top: 15px;
+          margin-bottom: 15px;
+          border-radius: 6px;
+          color: white;
+         
+         
+      }
+      .marq{
+          font-size: 30px;
+          color:purple;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          text-decoration: underline;
+      }
+      select{
+        width: 96%;
+          height: 30px;
+          margin-top: 15px;
+          border-radius: 6px;
+          border: 1px solid lightgrey;
+      }
+    
+
+    </style>
+</head>
+<body>
+    <!-- navigation 1 -->
+    <div class="nav1">        
+            <ul>
+            <li><img src="image/facebook.png" alt="" width="50px" height="50px"></li>
+            <li><img src="image/whatsapp.png" alt="" width="50px" height="50px"></li>          
+            <li><a href="sirJi_login.html">Login</a></li>
+            <li><a href="sirJi_reg.html">Create New Account</a></li>            
+        </ul>                       
+    </div>
+    <!-- navigation 2 -->
+    <div class="nav2">
+        <ul>
+            <li class="display"> Let's code Started</li>
+            <!-- <li><img src="image/briefcase.png" alt="" width="60px" height="60px"></li> -->
+            <i class="fas fa-home"></i>
+            <li><a href="#">Home</a></li>
+            <i class="fas fa-bullseye"></i>
+            <li><a href="#">Get Start</a></li>
+            <i class="fas fa-folder"></i>
+            <li><a href="#">Start Client Side</a></li>
+            <i class="fas fa-server"></i>
+            <li><a href="#">Start Server Side</a></li>                
+            <i class="fas fa-id-card-alt"></i>
+            <li><a href="#">Contact Us</a></li>
+            <i class="fas fa-blog"></i>
+            <li><a href="#">Our Blog</a></li>
+        </ul>
+    </div>
+    <div class="mid_body">
+        <div class="image_body">
+            <img src="image/bg7.jpg" width="100%" height="450px" alt="">
+            
+        </div>
+        <div class="form">
+         <h2 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:skyblue; font-size: 60px;">Developer Registration</h2>
+         <form action="sirJi_login.html">
+         <input  class="input_box" type="text" placeholder="Name" required>
+         <input  class="input_box" type="email" placeholder="Enter Email" required>
+         <input  class="input_box" type="password" placeholder="Enter password" required>       
+         <input  class="input_box" type="tel" placeholder="Mobile" required>    
+         <select name="developers" id="developers">
+             <option value="uI ">UI Developer</option>
+             <option value="php ">PHP Developer</option>
+             <option value="client ">Client</option>
+             <option value="java">JAVA Developer</option>
+             <option value="fs">Full Stack Developer</option>
+         </select>     
+         <a href=""></a><input  class="button" type="submit"value="Register Account">
+        </form>
+        </div>
+        
+    </div>
+    <marquee class="marq" behavior="" direction="">Create Your Digital Profile With us</marquee>
+    <div class="foot"> &copy; 2020-2021 let's code.com All Rights Reserved</div>
+   
+</body>
+</html>

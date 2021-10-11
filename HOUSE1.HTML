@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House 1</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+        /* START ::  TOP NAV AND BANNER SECTION */
+        *{margin: 0; padding: 0;}
+        .nav{
+            height:50px;
+            width:100%;
+            margin: auto;
+            padding-top: 2%;
+            position: fixed;
+            top:2px;
+            background-color: rgb(43, 145, 228);
+            z-index:+1;
+        }
+        .name{
+            font-size: 25px;
+            float: left;
+            height:50px;           
+            width:35%;
+            margin-left: 5%;
+            padding-top: 0%;
+            color: white;            
+        }
+        .name span{color:orange}
+        .links{
+            float: right;
+            width:45%;
+            margin-right: 5%;
+        }
+        .links ul li{
+            display: inline;
+            padding: 0.9% 2%;
+        }
+        .links ul li a{
+            text-decoration: none;
+            color:white;
+        }
+        .banner1{
+            height:96vh;
+            width:100%;
+            background: url(image/h1.jpeg);
+            background-size:100%;
+            position: relative;
+        }
+        .box1{
+            height:280px;
+            width:450px;
+            background-color: white;
+         
+            position: absolute;
+            margin-left: 10%;
+            margin-top: 30vh;
+            text-align: left;
+           
+        }
+        .box1 i{
+        padding-top:5%;
+        padding-left: 6%;;
+        color:grey;        
+        }
+        .box1 a{
+            color:blue;
+            text-decoration: none;
+        } 
+        .box1 p{
+        padding-top:2%;
+        padding-left: 5%;;
+        font-size: 25px;                  
+        }
+        .box1 input{
+         margin-top: 5%;
+         margin-left: 5%;
+            height:40px;
+            width:200px;
+            background-color: orange;
+            color: white;
+        }
+        /*  card section */
+        .section_2nd{
+            height: 720px;
+            width:100%;
+            background-color: whitesmoke;
+        }
+        .card{
+           float: left;
+           height:265px;
+           width:27%;
+          background-color: white;
+           margin-left: 2.41%;
+           margin-top: 2%;
+           text-align: left;
+           padding-left:3%;
+       }
+       .card i{
+        padding-top:5%;
+        /* padding-left: 0%; */
+        padding-bottom: 5%;
+        color:orange;
+       }
+       .card p{
+        padding-top:3%;
+        padding-bottom: 4%;
+       }
+       .card a{
+           text-decoration: none;
+           color: orange;
+       }
+       .card span{
+           /* padding-top: 2%; */
+           font-size: 30px;
+       }
+       /* 3rd section 4 column */
+       .section_3rd{
+           height:490px;
+           width:100%;
+           background-color: rgba(245, 245, 245 1.00);
+       }
+       .col{
+           float: left;
+           height:200px;
+           width:20%;
+          background-color: rgba(245, 245, 245 0,10);
+           margin-left: 20%;
+           margin-top: 2%;
+           text-align: center;
+       }
+       .col p{
+           font-size: 35px;
+           padding-top:10vh;
+           margin-bottom: 4%;
+       }
+       /* 4th section cards with house images */
+       .section_4th{
+           height:950px;
+           width:100%;
+           background-color: whitesmoke;
+         
+          
+       }
+       .section4_card{
+           float: left;
+           height:450px;
+           width:30%;
+          background-color: white;
+           margin-left: 2.41%;
+           margin-top: 2%;
+           text-align: left;
+       }
+       .section4_card p{
+           padding-top:5%;
+           padding-left: 4%;
+           font-size: 25px;
+           padding-bottom: 4%;
+       }
+       .section4_card span{
+        padding-left: 4%;
+        font-size: 15px;
+       }
+       .section4_card i{
+        padding-top:4%;
+        margin-left: 4%;
+           color: orange;
+       }
+
+
+       /* 5th section */
+       .section_5th{
+           height:500px;
+           background-color: rgba(189, 185, 185,0.50);
+           /* text-align: center; */
+       }
+       .section_5th p{
+           padding-top:5%;
+           padding-left:5%;
+           font-size: 55px;
+       }
+       .section_5th span{
+
+            padding-left: 6%;
+           padding-right: 15%;
+           font-size: 17px;
+         
+       }
+       .section_5th i{
+           /* padding:5%;   */
+           padding-top:5%;
+           margin-top: 10%;
+           margin-left: 10%;
+       }
+
+       /*  section 6 */
+       .section_6th{
+           height:480px;
+           width:100%;
+           background-color: teal;
+       }
+       .section6_card{
+           float: left;
+           height:400px;
+           width:30%;
+          background-color: red;
+           margin-left: 2.41%;
+           margin-top: 2%;
+           text-align: center;
+       }
+       /* section 7 */
+       .section_7th
+       {
+           height: 400px;
+           width:100%;
+           background-color: yellow;
+       }
+       /* section 8 */
+       .section_8th{
+           height:600px;
+           background-color:whitesmoke;
+           width: 100%;
+           
+       }
+       .section_8th p{
+           padding-top:3%;
+           padding-bottom: 2%;
+           font-size: 30px;
+           text-align: center;
+       }
+       .reviews_box_left{
+           height:370px;
+           width:28%;
+           float: left;
+           padding:2%;
+           background-color:white;
+         margin-top: 4%;
+          margin-left: 16%;
+       
+        }
+        .reviews_box_left p{
+           padding-top:3%;
+           padding-bottom: 2%;
+           font-size: 20px;
+           text-align: left;
+       }
+        .reviews_box_left i{
+            color:orange;
+            padding-top:5%;
+        }
+        .reviews_box_right{
+           height:370px;
+           width:28%;
+           float: right;
+           padding:2%;
+           background-color:white;
+         margin-top: 4%;
+          margin-left: 1%;
+          margin-right:16%;
+       }
+       .reviews_box_right p{
+           padding-top:3%;
+           padding-bottom: 2%;
+           font-size: 20px;
+           text-align: left;
+       }
+        .reviews_box_right i{
+            color:orange;
+            padding-top:5%;
+        }
+       /* footer */
+       /* .footer{
+           height: 500px;
+           width: 100%;
+           background-color: black;
+       } */
+       .clr{clear: both;}
+           .footer{
+           height:350px;
+           background-image: linear-gradient(black,black);
+           width:100%;
+            }
+            .footer p{
+                color:white;
+                text-align: center;
+                font-size: 20px;
+                color:grey;
+                margin-top: 2%;
+            }
+            .footer_links{
+                float:right;
+                width:50%;
+                text-align: right;
+              
+                padding-right: 6%;
+                color:white;
+            }
+            .footer_logos{
+                float:right;
+                width:40%;   
+                margin-top: 8%;   
+                text-align: right;   
+                margin-right: 6%;                                 
+            }
+            .footer_logos i{
+               color:white;
+              padding:2%;
+            }
+            .footer_links ul li{
+                display: inline;
+            }
+            .footer_links ul li a{
+                text-decoration: none;
+                color: white;
+                margin-left: 3%;
+                font-size:22px;
+                margin-top: 3%; 
+            }
+            .display_foot{
+           float: left;
+           font-size:4em;
+           text-align:left;
+           color: white;
+          padding-top: 10vh;
+           padding-left: 5%;
+       }
+       #name{
+           float:left;
+           margin-left: 10%;
+           margin-top:2%;
+           color:orange;
+       }
+    </style>
+</head>
+<body style="background-image:url(image/h4.jpeg); background-size: 100%;">
+    <!-- 1st :::  top nav , banner and box section -->
+<div class="banner1">
+    <div class="nav">
+        <div class="name"><span>E-</span>Property</div>
+        <div class="links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+                <i class="fas fa-phone"></i>
+                <li><a href="#">+ 1234567890</a></li>
+            </ul>
+        </div>
+    </div>
+<div class="clr"></div>
+    <div class="box1">
+       <i class="fas fa-map-marker-alt location"></i>
+       <a href="#">Melbourne , Australia</a>
+        <p>60 Thornley Street, <br> Marrickville , NSW 2204</p>
+        <i class="fas fa-bed">3</i>
+        <i class="fas fa-bath">3</i>
+        <i class="fas fa-share-square">1200 sq ft</i>
+        <br>
+        <input type="button" value="CHECK PROPERTY">
+    </div>
+</div>
+
+<!-- 2nd  :::    card section -->
+<div class="section_2nd">
+    <h2 style="text-align: center;padding-top: 3%; font-size:50px;">What We Do</h2>
+    <p style="text-align: center; margin-left: 10%; margin-right: 10%;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam sint est explicabo earum reprehenderit eius provident, eos in maxime eaque ipsum sunt illum delectus dolores ad veritatis deleniti pariatur facilis.</p>
+    <div class="card">
+        <i class="fas fa-home fa-2x"></i>
+        <br>
+        <span>Office Agency</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur magni molestiae necessitatibus amet harum illum!</p>
+        <a href="#">Read more</a>
+    </div>
+    <div class="card">
+        <i class="fas fa-landmark fa-2x"></i>
+        <br>
+        <span>Office Agency</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur magni molestiae necessitatibus amet harum illum!</p>
+        <a href="#">Read more</a>
+    </div>
+    <div class="card">
+        <i class="fas fa-hourglass-half fa-2x"></i>
+        <br>
+        <span>Office Agency</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur magni molestiae necessitatibus amet harum illum!</p>
+        <a href="#">Read more</a>
+    </div>
+    <div class="card">
+        <i class="fas fa-futbol fa-2x"></i>
+        <br>
+        <span>Office Agency</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur magni molestiae necessitatibus amet harum illum!</p>
+        <a href="#">Read more</a>
+    </div>
+    <div class="card">
+        <i class="fas fa-boxes fa-2x"></i>
+        <br>
+        <span>Office Agency</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur magni molestiae necessitatibus amet harum illum!</p>
+        <a href="#">Read more</a>
+    </div>
+    <div class="card">
+        <i class="fas fa-chart-area fa-2x"></i>
+        <br>
+        <span>Office Agency</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur magni molestiae necessitatibus amet harum illum!</p>
+        <a href="#">Read more</a>
+    </div>
+</div>
+<!-- 3rd section  -->
+<div class="section_3rd">
+    <div class="col">
+        <p> 445</p>
+        <span>PROPERTIES TO RENT</span>
+    </div>
+    <div class="col">
+        <p>350</p>
+        <span>PROPERTIES FOR SALE</span>
+    </div>
+
+    <div class="col">
+        <p>530</p>
+        <span>PROPERTIES UNDER OFFER</span>
+    </div>
+    <div class="col">
+        <p>25K</p>
+        <span>PROPERTIES SQUARE. FT</span>
+    </div>
+</div>
+
+<!-- 4th section cards with house images -->
+<div class="section_4th">
+    <h2 style="text-align: center; padding-top: 2%; padding-bottom: 2%;">Recently Added Propeties</h2>
+    <p style="text-align: center; margin-left: 10%; margin-right: 10%;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam sint est explicabo earum reprehenderit eius provident, eos in maxime eaque ipsum sunt illum delectus dolores ad veritatis deleniti pariatur facilis.</p>
+    <div class="section4_card">
+        <img src="image/h7.jpeg" width="100%" height="250px" alt="">
+      
+        <p>84 WoodLand St Cocoa </p>
+        <span>661-699 N Mc Clurg Ct, Chicago, IL 60611, </span>
+        <span>USA</span>
+        <br>
+         <i class="fas fa-bed"></i><span>3</span>
+        <i class="fas fa-bath"></i><span>3</span>
+        <i class="fas fa-share-square"></i><span>1200 sq ft</span>
+    </div>
+    <div class="section4_card">
+        <img src="image/h1.jpeg" width="100%" height="250px" alt="">
+        <p>84 WoodLand St Cocoa </p>
+        <span>661-699 N Mc Clurg Ct, Chicago, IL 60611, </span>
+        <span>USA</span>
+        <br>
+         <i class="fas fa-bed"></i><span>3</span>
+        <i class="fas fa-bath"></i><span>3</span>
+        <i class="fas fa-share-square"></i><span>1200 sq ft</span>
+    </div>
+    <div class="section4_card">
+        <img src="image/h3.jpeg" width="100%" height="250px" alt="">
+        <p>84 WoodLand St Cocoa </p>
+        <span>661-699 N Mc Clurg Ct, Chicago, IL 60611, </span>
+        <span>USA</span>
+        <br>
+         <i class="fas fa-bed"></i><span>3</span>
+        <i class="fas fa-bath"></i><span>3</span>
+        <i class="fas fa-share-square"></i><span>1200 sq ft</span>
+    </div>
+    <div class="section4_card">
+        <img src="image/h4.jpeg" width="100%" height="250px" alt="">
+        <p>84 WoodLand St Cocoa </p>
+        <span>661-699 N Mc Clurg Ct, Chicago, IL 60611, </span>
+        <span>USA</span>
+        <br>
+         <i class="fas fa-bed"></i><span>3</span>
+        <i class="fas fa-bath"></i><span>3</span>
+        <i class="fas fa-share-square"></i><span>1200 sq ft</span>
+    </div>
+    <div class="section4_card">
+        <img src="image/h5.jpeg" width="100%" height="250px" alt="">
+        <p>84 WoodLand St Cocoa </p>
+        <span>661-699 N Mc Clurg Ct, Chicago, IL 60611, </span>
+        <span>USA</span>
+        <br>
+         <i class="fas fa-bed"></i><span>3</span>
+        <i class="fas fa-bath"></i><span>3</span>
+        <i class="fas fa-share-square"></i><span>1200 sq ft</span>
+    </div>
+    <div class="section4_card">
+        <img src="image/h6.jpeg" width="100%" height="250px" alt="">
+        <p>84 WoodLand St Cocoa </p>
+        <span>661-699 N Mc Clurg Ct, Chicago, IL 60611, </span>
+        <span>USA</span>
+        <br>
+         <i class="fas fa-bed"></i><span>3</span>
+        <i class="fas fa-bath"></i><span>3</span>
+        <i class="fas fa-share-square"></i><span>1200 sq ft</span>
+    </div>
+</div>
+
+<!-- 5th section (contain : circle image , text and button)-->
+<div class="section_5th">
+    <p>Common Sense Solutions For  <br> All Aspects Of Commercial Property <br> Development Land.</p><br>
+    <i><img src="image/person.png" alt="" width="90px" height="90px"></i>
+    <br>
+    <span>Mark Henry ( co-founder )</span>
+</div>
+<!-- 6th section 3  cards and boxes under cards -->
+<!-- <div class="section_6th">
+    <div class="section6_card"></div>
+    <div class="section6_card"></div>
+    <div class="section6_card"></div>
+</div> -->
+<!-- section 7 contain email and text -->
+<!-- <div class="section_7th"></div> -->
+<!-- section 8 contain reviews and texts -->
+<div class="section_8th">
+    <p>Happy Clients</p>
+    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque aliquam consequatur porro asperiores tempore dolorum assumenda harum vitae rem eligendi. Tenetur!</span>
+    <div class="reviews_box_left">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde cumque nesciunt repellendus velit incidunt quam esse alias optio iusto corporis, rem reiciendis tempore reprehenderit tenetur! Et amet nulla nemo, labore omnis sunt odio facilis, libero suscipit ipsum, accusantium ad praesentium.</p>
+      <img style="margin-top: 20px;" src="image/person.png" width="60px" height="60px" alt="">
+      <br>
+      <span>Shane watson <br> co-founder</span>
+      <!-- <span style="text-align: right;">Shane Watson <br> co-founder</span> -->
+
+    </div>
+    <div class="reviews_box_right">
+        <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde cumque nesciunt repellendus velit incidunt quam esse alias optio iusto corporis, rem reiciendis tempore reprehenderit tenetur! Et amet nulla nemo, labore omnis sunt odio facilis, libero suscipit ipsum, accusantium ad praesentium.</p>
+      <!-- <img style="margin-top: 20px;" src="image/person.png" width="60px" height="60px" alt=""> -->
+      <i><img src="image/person.png" alt="" width="60px" height="60px"></i>
+      <br>
+      <span>Shane watson <br> co-founder</span>
+    </div>
+</div>
+<!-- footer section -->
+<div class="footer ">
+    <div class="display_foot"> get in touch <br>
+     with us
+ </div>
+ <div class="footer_logos">
+     <i class="fab fa-facebook "></i>
+     <i class="fab fa-twitter "></i>
+     <i class="fab fa-google "></i>
+     <i class="fab fa-instagram "></i>
+ </div>
+ <div class="footer_links">
+     <ul>
+         <li><a href="#">Home</a></li>
+         <li><a href="#">About us</a></li>
+         <li><a href="#">Services</a></li>
+         <li><a href="#">Gallery</a></li>
+         <br>
+         <li><a href="#">Subscribe</a></li>
+         <li><a href="#">Contact</a></li>
+     </ul>
+ </div>
+ <div class="clr"></div>
+ <br>
+ <br><br>
+ <hr>
+ <p>&copy; Commute . All rights reserved | Design by W3layouts</p>
+ </div>
+
+</body>
+</html>
